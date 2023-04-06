@@ -104,6 +104,11 @@ nnoremap <leader>q :action HideActiveWindow<CR>
 " Set breakpoint with <leader>br
 nnoremap <leader>br :action ToggleLineBreakpoint<CR>
 
+" Show context actions with <leader>i
+nnoremap <leader>i :action ShowIntentionActions<CR>
+
+" Rename variable with <leader>rn
+nnoremap <leader>rn :action RenameElement<CR>
 
 " [--- NERD TREE SUPPORT ---]
 set NERDTree
