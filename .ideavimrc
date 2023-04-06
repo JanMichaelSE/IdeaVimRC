@@ -1,0 +1,112 @@
+" Set <space> as the leader key
+let mapleader = " "
+let maplocalleader = " "
+
+" [--- IdeaVim Setters ---]
+set ideajoin
+set idearefactormode=keep
+
+" Remove Bell Sounds
+set visualbell
+set noerrorbells
+
+" Set highlight on search
+set nohlsearch
+
+" Show a few lines of context around the cursor. Note that this makes the
+" text scroll if you mouse-click near the start or end of the window.
+set scrolloff=5
+
+" Do incremental searching.
+set incsearch
+
+" Make line numbers default
+set number
+set relativenumber
+
+" Enable mouse mode
+set mouse=a
+
+" Sync clipboard between OS and IdeaVim
+set clipboard+=unnamed
+
+" Enable break indent
+set breakindent
+
+" Save undo history
+set undofile
+
+" Case insensitive searching UNLESS /C or capital in search
+set ignorecase
+set smartcase
+
+" Keep signcolumn on by default
+set signcolumn=yes
+
+" Decrease update time
+set updatetime=250
+set timeout
+set timeoutlen=300
+
+" Set completeopt to have a better completion experience
+set completeopt=menuone,noselect
+
+
+" [--- IdeaVim KEY REMAPS ---]
+
+" Don't use Ex mode, use Q for formatting.
+map Q gq
+
+nnoremap <C-h> :action PreviousTab<CR>
+nnoremap <C-l> :action NextTab<CR>
+nnoremap <leader>x :action CloseEditor<CR>
+
+" Move vertically while also centering
+nnoremap <C-d> <C-d>zz
+nnoremap <C-u> <C-u>zz
+nnoremap n nzz
+nnoremap N Nzz
+
+" Move selection up and down with ease using IntelliJ actions and reformat code
+vnoremap J :action MoveLineDown<CR>:action ReformatCode<CR>
+vnoremap K :action MoveLineUp<CR>:action ReformatCode<CR>
+
+" Use normal Ctrl+Backspace to erase words easily while writing
+inoremap <C-BS> <C-o>diw
+
+" Map Ctrl + a to visually select the whole buffer
+nnoremap <C-a> :normal! ggVG<CR>
+
+" Paste without replacing system clipboard
+nnoremap <silent> <leader>p "_dP
+
+" Save using Ctrl + s like all other platforms
+nnoremap <C-s> :w<CR>
+
+" Open Search Everywhere popup with <leader>sf
+nnoremap <leader>sf :action SearchEverywhere<CR>
+
+" Open Git Menu with ease
+nnoremap <leader>g :action Git.Menu<CR>
+
+" Show error messages with ease
+nnoremap <leader>se :action ShowErrorDescription<CR>
+
+" Run program with <leader>rp
+nnoremap <leader>rp :action Run<CR>
+
+" Run program in debug mode with <leader>rd
+nnoremap <leader>rd :action Debug<CR>
+
+" Hide terminal/output with <leader>q
+nnoremap <leader>q :action HideActiveWindow<CR>
+
+" Set breakpoint with <leader>br
+nnoremap <leader>br :action ToggleLineBreakpoint<CR>
+
+
+" [--- NERD TREE SUPPORT ---]
+set NERDTree
+
+" Toggle NERDTree with <leader>f
+nnoremap <leader>f :NERDTreeToggle<CR>
