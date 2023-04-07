@@ -71,8 +71,8 @@ nnoremap N Nzz
 vnoremap J :action MoveLineDown<CR>:action ReformatCode<CR>
 vnoremap K :action MoveLineUp<CR>:action ReformatCode<CR>
 
-" Use normal Ctrl+Backspace to erase words easily while writing
-inoremap <C-BS> <C-o>diw
+" Use Ctrl+Backspace to erase words to the left of the cursor while writing
+inoremap <C-BS> <C-o>db
 
 " Map Ctrl + a to visually select the whole buffer
 nnoremap <C-a> :normal! ggVG<CR>
