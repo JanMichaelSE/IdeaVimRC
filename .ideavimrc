@@ -58,8 +58,9 @@ set completeopt=menuone,noselect
 map Q gq
 
 nnoremap <C-h> :action PreviousTab<CR>
-nnoremap <C-l> :action NextTab<CR>
-nnoremap <leader>x :action CloseEditor<CR>
+nnoremap <C-l> :action NextTab<CR
+nnoremap <leader>xc :action CloseEditor<CR>
+nnoremap <leader>xa :action CloseAllEditors<CR>
 
 " Move vertically while also centering
 nnoremap <C-d> <C-d>zz
