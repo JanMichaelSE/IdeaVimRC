@@ -58,9 +58,14 @@ set completeopt=menuone,noselect
 map Q gq
 
 nnoremap <C-h> :action PreviousTab<CR>
-nnoremap <C-l> :action NextTab<CR
+nnoremap <C-l> :action NextTab<CR>
 nnoremap <leader>xc :action CloseEditor<CR>
 nnoremap <leader>xa :action CloseAllEditors<CR>
+
+" Run Commands
+nnoremap <leader>rp :action Run<CR>
+nnoremap <leader>rd :action Debug<CR>
+nnoremap <leader>rb :action CompileProject<CR>
 
 " Move vertically while also centering
 nnoremap <C-d> <C-d>zz
@@ -87,17 +92,9 @@ nnoremap <C-s> :w<CR>
 " Open Search Everywhere popup with <leader>sf
 nnoremap <leader>sf :action SearchEverywhere<CR>
 
-" Open Git Menu with ease
-nnoremap <leader>g :action Git.Menu<CR>
-
 " Show error messages with ease
 nnoremap <leader>se :action ShowErrorDescription<CR>
 
-" Run program with <leader>rp
-nnoremap <leader>rp :action Run<CR>
-
-" Run program in debug mode with <leader>rd
-nnoremap <leader>rd :action Debug<CR>
 
 " Hide terminal/output with <leader>q
 nnoremap <leader>q :action HideActiveWindow<CR>
@@ -107,6 +104,9 @@ nnoremap <leader>br :action ToggleLineBreakpoint<CR>
 
 " Show context actions with <leader>i
 nnoremap <leader>i :action ShowIntentionActions<CR>
+
+" Open Generate options with <leader>g
+nnoremap <leader>g :action Generate<CR>
 
 " Rename variable with <leader>rn
 nnoremap <leader>rn :action RenameElement<CR>
