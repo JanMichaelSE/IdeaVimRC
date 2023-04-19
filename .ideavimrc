@@ -106,7 +106,10 @@ nnoremap <leader>br :action ToggleLineBreakpoint<CR>
 nnoremap <leader>i :action ShowIntentionActions<CR>
 
 " Open Generate options with <leader>g
-nnoremap <leader>g :action Generate<CR>
+nnoremap <leader>gg :action Generate<CR>
+
+" Go to Definition with <leader>gd
+nnoremap <leader>gd :action GotoDeclaration<CR>
 
 " Rename variable with <leader>rn
 nnoremap <leader>rn :action RenameElement<CR>
