@@ -111,8 +111,14 @@ nnoremap <leader>gg :action Generate<CR>
 " Go to Definition with <leader>gd
 nnoremap <leader>gd :action GotoDeclaration<CR>
 
+" Go to references with <leader>gr
+nnoremap <leader>gr :action FindUsages<CR>
+
 " Rename variable with <leader>rn
 nnoremap <leader>rn :action RenameElement<CR>
+
+" Map Ctrl+T to toggle terminal
+nnoremap <C-t> :action ActivateTerminalToolWindow<CR>
 
 " [--- NERD TREE SUPPORT ---]
 set NERDTree
