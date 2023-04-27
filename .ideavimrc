@@ -114,6 +114,9 @@ nnoremap <leader>gd :action GotoDeclaration<CR>
 " Go to references with <leader>gr
 nnoremap <leader>gr :action FindUsages<CR>
 
+" Open Git actions with <leader>git
+nnoremap <leader>lg :action Vcs.QuickListPopupAction<CR>
+
 " Rename variable with <leader>rn
 nnoremap <leader>rn :action RenameElement<CR>
 
