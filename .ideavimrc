@@ -92,6 +92,9 @@ nnoremap <C-s> :w<CR>
 " Open Search Everywhere popup with <leader>sf
 nnoremap <leader>sf :action SearchEverywhere<CR>
 
+" Find in Files with <leader>sg
+nnoremap <leader>sg :action FindInPath<CR>
+
 " Show error messages with ease
 nnoremap <leader>se :action ShowErrorDescription<CR>
 
