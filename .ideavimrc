@@ -126,6 +126,12 @@ nnoremap <leader>rn :action RenameElement<CR>
 " Map Ctrl+T to toggle terminal
 nnoremap <C-t> :action ActivateTerminalToolWindow<CR>
 
+" Open Refactor menu in Visual mode with <leader>r
+vnoremap <leader>r :<C-u>action Refactorings.QuickListPopupAction<CR>
+
+" Open Refactor menu in Visual Block mode with <leader>r
+xnoremap <leader>r :<C-u>action Refactorings.QuickListPopupAction<CR>
+
 " [--- NERD TREE SUPPORT ---]
 set NERDTree
 
