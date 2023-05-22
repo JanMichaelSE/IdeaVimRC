@@ -89,8 +89,8 @@ nnoremap <silent> <leader>p "_dP
 " Save using Ctrl + s like all other platforms
 nnoremap <C-s> :w<CR>
 
-" Open Search Everywhere popup with <leader>sf
-nnoremap <leader>sf :action SearchEverywhere<CR>
+" Open Search Files popup with <leader>sf
+nnoremap <leader>sf :action GotoFile<CR>
 
 " Find in Files with <leader>sg
 nnoremap <leader>sg :action FindInPath<CR>
@@ -98,6 +98,8 @@ nnoremap <leader>sg :action FindInPath<CR>
 " Show error messages with ease
 nnoremap <leader>se :action ShowErrorDescription<CR>
 
+" Show quick documentation with <space>si
+nnoremap <leader>si :action QuickJavaDoc<CR>
 
 " Hide terminal/output with <leader>q
 nnoremap <leader>q :action HideActiveWindow<CR>
