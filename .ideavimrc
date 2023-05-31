@@ -101,6 +101,9 @@ nnoremap <leader>se :action ShowErrorDescription<CR>
 " Show quick documentation with <space>si
 nnoremap <leader>si :action QuickJavaDoc<CR>
 
+" Show methods in current class with <leader>sm
+nnoremap <leader>sm :action FileStructurePopup<CR>
+
 " Hide terminal/output with <leader>q
 nnoremap <leader>q :action HideActiveWindow<CR>
 
