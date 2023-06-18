@@ -99,7 +99,7 @@ nnoremap <leader>sg :action FindInPath<CR>
 nnoremap <leader>se :action ShowErrorDescription<CR>
 
 " Show quick documentation with <space>si
-nnoremap <leader>si :action QuickJavaDoc<CR>
+nnoremap K :action QuickJavaDoc<CR>
 
 " Show methods in current class with <leader>sm
 nnoremap <leader>sm :action FileStructurePopup<CR>
@@ -107,11 +107,14 @@ nnoremap <leader>sm :action FileStructurePopup<CR>
 " Hide terminal/output with <leader>q
 nnoremap <leader>q :action HideActiveWindow<CR>
 
+" Hide all tool windows with <leader>h
+nnoremap <leader>h :action HideAllWindows<CR>
+
 " Set breakpoint with <leader>br
 nnoremap <leader>br :action ToggleLineBreakpoint<CR>
 
 " Show context actions with <leader>i
-nnoremap <leader>i :action ShowIntentionActions<CR>
+nnoremap <leader>ca :action ShowIntentionActions<CR>
 
 " Open Generate options with <leader>g
 nnoremap <leader>gg :action Generate<CR>
