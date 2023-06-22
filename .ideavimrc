@@ -122,6 +122,9 @@ nnoremap <leader>gg :action Generate<CR>
 " Go to Definition with <leader>gd
 nnoremap <leader>gd :action GotoDeclaration<CR>
 
+" Go to Implementation with <leader>gi
+nnoremap <leader>gi :action GotoImplementation<CR>
+
 " Go to references with <leader>gr
 nnoremap <leader>gr :action FindUsages<CR>
 
