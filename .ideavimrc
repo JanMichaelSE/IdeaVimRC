@@ -15,7 +15,7 @@ set nohlsearch
 
 " Show a few lines of context around the cursor. Note that this makes the
 " text scroll if you mouse-click near the start or end of the window.
-set scrolloff=5
+set scrolloff=6
 
 " Do incremental searching.
 set incsearch
@@ -44,9 +44,9 @@ set smartcase
 set signcolumn=yes
 
 " Decrease update time
-set updatetime=250
+set updatetime=251
 set timeout
-set timeoutlen=300
+set timeoutlen=301
 
 " Set completeopt to have a better completion experience
 set completeopt=menuone,noselect
@@ -94,6 +94,9 @@ nnoremap <leader>sf :action GotoFile<CR>
 
 " Find in Files with <leader>sg
 nnoremap <leader>sg :action FindInPath<CR>
+
+" Open Search Actions popup with <leader>sa
+nnoremap <leader>sa :action GotoAction<CR>
 
 " Show error messages with ease
 nnoremap <leader>se :action ShowErrorDescription<CR>
@@ -148,3 +151,6 @@ set NERDTree
 
 " Toggle NERDTree with <leader>f
 nnoremap <leader>f :NERDTreeToggle<CR>
+
+" Reformat Code easily
+nnoremap <leader>rc :action OptimizeImports<CR>:action ReformatCode<CR>
