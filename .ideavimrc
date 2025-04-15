@@ -28,7 +28,7 @@ set relativenumber
 set mouse=a
 
 " Sync clipboard between OS and IdeaVim
-set clipboard+=unnamed
+set clipboard+=unnamedplus
 
 " Enable break indent
 set breakindent
@@ -119,6 +119,9 @@ nnoremap <leader>br :action ToggleLineBreakpoint<CR>
 " Show context actions with <leader>i
 nnoremap <leader>ca :action ShowIntentionActions<CR>
 
+" Show context actions with <leader>i
+vnoremap <leader>ca :action ShowIntentionActions<CR>
+
 " Open Generate options with <leader>g
 nnoremap <leader>gg :action Generate<CR>
 
@@ -146,11 +149,32 @@ vnoremap <leader>r :<C-u>action Refactorings.QuickListPopupAction<CR>
 " Open Refactor menu in Visual Block mode with <leader>r
 xnoremap <leader>r :<C-u>action Refactorings.QuickListPopupAction<CR>
 
+" Paste without replacing system clipboard in normal mode
+nnoremap <leader>p "_dP
+
+" Paste without replacing system clipboard in visual mode
+vnoremap <leader>p "_dP
+
 " [--- NERD TREE SUPPORT ---]
 set NERDTree
 
 " Toggle NERDTree with <leader>f
-nnoremap <leader>f :NERDTreeToggle<CR>
+nnoremap <leader>e :NERDTreeToggle<CR>
 
 " Reformat Code easily
-nnoremap <leader>rc :action OptimizeImports<CR>:action ReformatCode<CR>
+nnoremap <leader>rc :action ReformatCode<CR>
+vnoremap <leader>rc :action ReformatCode<CR>
+
+" [--- HARPOON CONFIG ---]
+
+" Mark files with Harpoon
+nnoremap <leader>m :action AddToHarpoon<CR>
+
+" Access sticky files
+nnoremap <M-h> :action GotoHarpoon1<CR>
+nnoremap <M-j> :action GotoHarpoon2<CR>
+nnoremap <M-k> :action GotoHarpoon3<CR>
+nnoremap <M-l> :action GotoHarpoon4<CR>
+
+" Open Harpoon to interact with sticky files
+nnoremap <leader>sh :action ShowHarpoon<CR>
